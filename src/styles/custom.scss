@@ -1,0 +1,11 @@
+$dark: #2a2d34;
+$white: #ececec;
+$primary: #3b7054;
+
+$enable-shadows: true;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+  background-color: $white;
+}
