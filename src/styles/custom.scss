@@ -1,11 +1,22 @@
-$dark: #2a2d34;
-$white: #ececec;
-$primary: #3b7054;
+$dark: #15252d;
+$white: #fefefe;
+$primary: #15252d;
 
 $enable-shadows: true;
 
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald');
 
 body {
   background-color: $white;
+  color: $dark;
+  font-family: 'Oswald', sans-serif;
+}
+
+.text-lobster {
+  font-family: 'Lobster', cursive;
+}
+
+a:hover {
+  text-decoration: none;
 }

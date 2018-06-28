@@ -6,10 +6,10 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUser, faCircleNotch } from '@fortawesome/free-solid-svg-icons';
-import { faComments } from '@fortawesome/free-regular-svg-icons';
+import { faHome, faSignal, faKeyboard, faComments } from '@fortawesome/free-solid-svg-icons';
+import {  } from '@fortawesome/free-regular-svg-icons';
 
-library.add(faUser, faCircleNotch, faComments);
+library.add(faHome, faSignal, faKeyboard, faComments);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
