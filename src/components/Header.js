@@ -5,9 +5,11 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <a href='/'>
-          <h1 className='text-lobster text-center'>HL</h1>
-        </a>
+        <nav className='navbar navbar-expand-lg navbar-dark bg-dark mb-2'>
+          <div className='container'>
+            <a className='navbar-brand text-primary' href='/'>Hockey League</a>
+          </div>
+        </nav>
       </header>
     )
   }
