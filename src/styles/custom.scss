@@ -1,11 +1,12 @@
-$dark: #24292e;
+$dark: #2b303a;
 $white: #ffffff;
-$primary: #eb9486;
+$primary: #ff715b;
+$secondary: #ff715b;
 
 $enable-shadows: true;
 
 @import 'node_modules/bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Oswald');
 
 body {
   background-color: $white;
@@ -13,8 +14,12 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.text-lobster {
-  font-family: 'Lobster', cursive;
+.text-pt-mono {
+  font-family: 'PT Mono', sans-serif;
+}
+
+a {
+  transition: 0.2s ease-in;
 }
 
 a:hover {
@@ -35,4 +40,40 @@ a:hover {
 
 .mb-n1 {
   margin-bottom: -1px;
+}
+
+.nav-link {
+  margin-bottom: -1px;
+  margin-right: 1em;
+  border-bottom: 2px solid transparent;
+  color: $dark;
+  opacity: 0.5;
+  transition: 0.2s ease-in;
+}
+
+.nav-link:hover {
+  border-bottom-color: $dark;
+  color: $dark;
+  opacity: 1.0;
+}
+
+.active {
+  opacity: 1.0;
+  border-bottom-color: $secondary;
+}
+
+.active:hover {
+  border-bottom-color: $secondary;
+}
+
+.w-4 {
+  width: 4em;
+}
+
+.fs-4 {
+  font-size: 4em;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
